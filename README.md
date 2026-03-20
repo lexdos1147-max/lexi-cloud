@@ -1,4 +1,7 @@
-# lexi cloud☁️
+# Lexi Cloud☁️
+
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Flask](https://img.shields.io/badge/Flask-Framework-black)
 
 A personal cloud server built using Flask, designed to run on low-end devices like old phones.
 
@@ -11,6 +14,9 @@ To build a simple, private cloud system that runs on low-end devices like old sm
 - File upload system
 - Personal file storage
 - Simple web interface
+
+## How it works
+Users can create an account, log in, upload files, and access them through a simple web interface running locally or over a private network.
 
 ## Tech Stack
 - Python (Flask)
