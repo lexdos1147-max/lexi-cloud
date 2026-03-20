@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="d-flex justify-content-between mb-3">
+    <h5>Welcome, {{user}}</h5>
+    <div>
+        <a href="/chat" class="btn btn-outline-primary btn-sm">Chat</a>
+        <a href="/logout" class="btn btn-outline-danger btn-sm">Logout</a>
+    </div>
+</div>
+
+<div class="card p-3 shadow-sm mb-3">
+    <h6>Upload File</h6>
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" class="form-control mb-2">
+        <button class="btn btn-primary w-100">Upload</button>
+    </form>
+</div>
+
+<div class="card p-3 shadow-sm">
+    <h6>Your Files</h6>
+    <ul class="list-group">
+        {% for file in files %}
+        <li class="list-group-item d-flex justify-content-between">
+          {{ file[0] }} ({{ file[1] }} bytes)
+            
+           <div>
+            <a href="/download/{{ file[0] }}" class="btn btn-sm btn-success me-2">Download</a>
+            <a href="/view/{{ file[0] }}"
+              class="btn btn-sm btn-success me-2"
+              >view</a>
+            <a href="/delete/{{ file[0] }}" class="btn btn-danger btn-sm">Delete</a>
+           </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}
