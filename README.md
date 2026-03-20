@@ -1,4 +1,10 @@
+lexi cloud☁️
+
 A personal cloud server built using Flask, designed to run on low-end devices like old phones.
+
+## Why this project?
+To build a simple, private cloud system that runs on low-end devices like old smartphones, without relying on external services.
+
 
 ## Features
 - User login & registration
