@@ -1,4 +1,4 @@
-lexi cloud☁️
+# lexi cloud☁️
 
 A personal cloud server built using Flask, designed to run on low-end devices like old phones.
 
